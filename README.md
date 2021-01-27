@@ -37,7 +37,7 @@ npm run build
 
 ### Deploy produção
 
-Ao compilar para modo de podução será criada uma pasta chamda dist na raiz do projeto, o domínio deverá apontar a mesma usando NGINX.
+Ao compilar o projeto para podução será criada uma pasta chamada /dist na raiz do projeto, o domínio deverá para /dist usando NGINX.
 
 
 
