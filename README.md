@@ -30,7 +30,7 @@ yarn build
 
 ### Deploy produção
 
-Ao compilar para modo de podução será criada uma pasta chamda dist, do domínio deverá apontar a mesma usando NGINX.
+Ao compilar para modo de podução será criada uma pasta chamda dist na raiz do projeto, o domínio deverá apontar a mesma usando NGINX.
 
 
 
