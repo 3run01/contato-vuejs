@@ -2,8 +2,11 @@
 Sistema de contatos em vue.js
 
 ## Configuração do projeto
+Rodar o seguinte comando para instalação dos pacotes
 ```
 yarn install
+ou
+npm install
 ```
 
 ### Usar em modo de desenvolvimento
@@ -15,6 +18,8 @@ VUE_APP_URL_API=http://localhost:8000/api
 Rodar o seguinte comando:
 ```
 yarn serve
+ou
+npm run serve
 ```
 
 ### Compilar para modo de produção
@@ -26,6 +31,8 @@ VUE_APP_URL_API=http://localhost:8000/api
 Rodar o seguinte comando:
 ```
 yarn build
+ou
+npm run build
 ```
 
 ### Deploy produção
