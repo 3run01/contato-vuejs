@@ -1,19 +1,23 @@
 # app
 
-## Project setup
+## Configuração do projeto
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Usar em modo de desenvolvimento
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compilar para modo de produção
 ```
 yarn build
 ```
+
+### Deploy produção
+
+Ao compilar para modo de podução será criada uma pasta chamda dist, do domínio deverá apontar a mesma usando NGINX.
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

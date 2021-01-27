@@ -1,32 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <b-overlay :show="getOverlay" rounded="sm">
+      <b-navbar type="dark" variant="dark">
+        <b-navbar-nav>
+          <b-nav-item @click="$router.push({name: 'Home'})">Início</b-nav-item>
+          <b-nav-item @click="$router.push({name: 'Contato'})">Contatos</b-nav-item>
+        </b-navbar-nav>
+      </b-navbar>
+      <b-container class="mt-5">
+        <router-view />
+      </b-container>
+    </b-overlay>
   </div>
 </template>
+<script>
+  import { mapGetters } from 'vuex'
+  export default {
+    computed: {
+      ...mapGetters([
+        'getOverlay'
+      ])
+    },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  }
+</script>
